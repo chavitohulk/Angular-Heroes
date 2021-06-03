@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+
+.posicion {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.separado {
+    margin-top: 65px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+
+/* ----- ----- FOOTER ----- ----- */
+
+footer .redes-sociales {
+    position: relative;
+    bottom: 0px;
+    background: #1e2b38;
+    padding: 60px 0;
+}
+
+footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales .contenedor a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    font-size: 30px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 20px;
+    border-radius: 3px;
+}
+
+footer .redes-sociales .contenedor .twitter:hover {
+    background: #55acee;
+}
+
+footer .redes-sociales .contenedor .facebook:hover {
+    background: #3b5998;
+}
+
+footer .redes-sociales .contenedor .youtube:hover {
+    background: #cd201f;
+}
+
+footer .redes-sociales .contenedor .github:hover {
+    background: #666666;
+}
+
+footer .redes-sociales .contenedor .instagram:hover {
+    background: #3f729b;
+}
+
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+    }
+    .main .trabajos .contenedor-trabajos .trabajo {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .contenedor-texto .texto .nombre {
+        font-size: 35px;
+    }
+    header .contenedor-texto .texto .profesion {
+        font-size: 18px;
+    }
+    footer .redes-sociales .contenedor {
+        flex-wrap: wrap;
+    }
+    footer .redes-sociales .contenedor a {
+        padding: 20px;
+    }
+}
+
+
+/*# sourceMappingURL=estilos.css.map */

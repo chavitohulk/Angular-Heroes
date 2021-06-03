@@ -1,0 +1,26 @@
+<div class="col">
+    <div class="card h-100">
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{heroe.nombre}}</h5>
+            <p class="card-text">{{heroe.bio}}</p>
+        </div>
+        <div *ngIf="mostrar" class="d-grid gap-2">
+            <button (click)="verHeroe(idx)" class="btn btn-primary" type="button">Ver más ...</button>
+        </div>
+        <a *ngIf="mostrartarjeta" [routerLink]="['/heroes']" class="btn btn-primary" type="button">Todos</a>
+
+        <div *ngIf="mostrarencontrado" class="d-grid gap-2">
+            <button (click)="verHeroe(idx)" class="btn btn-primary" type="button">Ver Buscado ...</button>
+        </div>
+
+        <!--dc-->
+        <img *ngIf="heroe.casa=='DC' && mostrartarjeta" src="assets/img/dc.png" class="img-thumbnail" [alt]="heroe.nombre">
+        <!--marvel-->
+        <img *ngIf="heroe.casa=='Marvel' && mostrartarjeta" src="assets/img/marvel.png" class="card-img-top img-fluid" [alt]="heroe.nombre">
+        <div class="card-footer">
+            <small class="text-muted">Primera aparición: {{heroe.aparicion}}</small>
+        </div>
+    </div>
+
+</div>

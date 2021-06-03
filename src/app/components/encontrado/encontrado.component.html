@@ -1,0 +1,10 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <app-heroe-tarjeta [heroe]="heroe" [idx]="heroe.idx" [desde]="origen" *ngFor="let heroe of heroes; let i =index"></app-heroe-tarjeta>
+</div>
+<div *ngIf="alerta" class="row mt-5">
+    <div class="col-md-12">
+        <div class="alert alert-secondary" role="alert">
+            No se encuentra el Heróe a buscar
+        </div>
+    </div>
+</div>
